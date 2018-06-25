@@ -1,0 +1,41 @@
+<include file="Public:header" />
+<link href="__PUBLIC__/css/main.css" rel="stylesheet">
+
+<!--主体内容开始-->
+  
+    <div class="wrapper">
+        <div class="header_hd" style="background-image:url(__PUBLIC__/images/contactus.jpg); background-repeat:no-repeat">
+            <div class="container">
+                <h3>产品服务</h3>
+                <h2>多年丰富的推广经验，专业的技术团队！</h2>
+                <div id="case_tab" class="tab">
+                    <div>
+                         
+                        <yang:catlist typeid="1" type='son' flag='1'>
+						<a href="{$catlist.url}" <?php if($cid==$catlist['id']){ echo 'class="active"'; } ?>>{$catlist.name}</a>
+						</yang:catlist>
+                         
+                        <span></span>                    </div>
+                </div>
+				
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h4>{$cate.name}</h4>
+                <div class="line"></div>
+                <div class="row mb" style="padding:20px;">
+                  {$cate.content}
+                </div>
+             
+
+            </div>
+        </div>
+
+    </div>
+   	<include file="Public:footer" />
+	<include file="Public:bottom" />
+	
+	
+  
+<script src="__PUBLIC__/js/main.js"></script>

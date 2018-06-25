@@ -1,0 +1,49 @@
+<include file="Public:header" />
+<link href="__PUBLIC__/css/main.css" rel="stylesheet">
+
+<!--主体内容开始-->
+    <div class="wrapper">
+        <div class="header_hd" style="background-image:url(__PUBLIC__/images/zixun.jpg); background-repeat:no-repeat">
+            <div class="container">
+                <h3>信息动态</h3>
+                <h2>网站设计是技术与创意的完美融合!</h2>
+                <div id="case_tab" class="tab">
+                    <div>
+                        
+                         <yang:catlist typeid="2" type='son' flag='1'>
+						<a href="{$catlist.url}" class="active">{$catlist.name}</a>
+						</yang:catlist>
+                         
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h4 class="text-c">{$cate.name}</h4>
+                    <div class="brand_list">
+			<h1>{$content.title}</h1>
+            <h2>发布时间：{$content.publishtime|date='Y-m-d',###}  丨 阅读次数:<yang:click /> </h2>
+            <div class="newstext">
+              
+			  {$content.content}
+			 </div>
+            <div class="pageflip">
+        <div class="l">上一篇：<yang:prev /> </div>
+        <div class="r">下一篇：<yang:next /></div>
+        </div>
+        
+        
+        
+        
+		</div>
+            </div>
+        </div>
+    </div>
+  	<include file="Public:footer" />
+	<include file="Public:bottom" />
+	
+	
+  
+<script src="__PUBLIC__/js/main.js"></script>

@@ -1,0 +1,6 @@
+[ 2017-05-18T17:15:26+08:00 ] ::1 /caiyang/
+ERR: 模板不存在:./Public/Home/yogman/Index_index.html
+
+[ 2017-05-18T17:46:34+08:00 ] ::1 /caiyang/index.php?s=/List/index/cid/2.html
+ERR: 模板不存在:./Public/Home/caiyang/List_article.html
+

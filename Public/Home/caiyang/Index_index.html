@@ -1,0 +1,260 @@
+ <title><yang:sitetitle /></title>
+<include file="Public:header" />
+
+<link href="__PUBLIC__/css/index.css" rel="stylesheet">
+  
+	<!--主体内容开始-->
+    <div id="wrap" class="wrapper">
+        <div class="pages" id="pages">
+            <div class="page page1">
+                <div id="slide" class="slide">
+				<yang:list titlelen='30' typeid='24' limit='3'>
+                    <div>
+                        <div class="bgs" style="background-image: url({$list.litpic});"></div>
+                        <div class="index_inner">
+                            <div class="index_box solgan">
+                                <div class="container">
+                                    <h3>{$list.shorttitle}</h3>
+                                    <h2>{$list.title}</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</yang:list>
+					
+                   
+                </div>
+                <div class="index_inner">
+                    <div class="index_box">
+                        <div class="container index_nav">
+                            <ul id="index_nav" class="clearfix">
+                                <li><a href="javascript:;" data-index="1"><span>业务</span><i class="iconfont icon-about"></i></a></li>
+                                <li><a href="javascript:;" data-index="2"><span>案例</span><i class="iconfont icon-service"></i></a></li>
+                                <li><a href="javascript:;" data-index="3"><span>客户</span><i class="iconfont icon-custom"></i></a></li>
+                                <li><a href="javascript:;" data-index="4"><span>新闻</span><i class="iconfont icon-news"></i></a></li>
+                                <li><a href="javascript:;" data-index="5"><span>联系</span><i class="iconfont icon-contact"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow"><span></span><i class="iconfont icon-arrow"></i></div>
+            </div>
+            <div class="page page2">
+                <div class="index_inner">
+                    <div class="index_box item_box">
+                        <h2><a href="">服务项目</a></h2>
+                        <h5><span class="t">Business</span><span class="page_icon iconfont icon-about"></span></h5>
+                        <div class="container">
+                            <div class="about_box item_bd">
+							
+							 <yang:catlist typeid="1" type='son' flag='1' limit='3'>
+                                <div class="card">
+                                <a href="{$catlist.url}">
+                                    <div class="cont">
+                                        <div class="card_image" style="background-image: url({$catlist.catpic});"></div>
+                                        <div class="card_detail">
+										
+												
+												<?php if($catlist['id']==15){ ?>
+                                                 <span class="icon iconfont icon-pc"></span>
+											    <?php } if($catlist['id']==16){ ?>
+												 <span class="icon iconfont icon-pm"></span>
+												<?php } if($catlist['id']==17){ ?>
+												 <span class="icon iconfont icon-mb"></span>
+												<?php } ?>
+												
+												
+                                                <span class="text">
+                                                    <h3>{$catlist.name}</h3>
+                                                    <p class="line">{$catlist.description}</p>
+                                                    <p class="text-r"><span class="more">Learn More &gt;</span></p>
+                                                </span>                                        
+										</div>
+                                    </div>
+                                </a>                                
+								</div>
+								</yang:catlist>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow"><span></span><i class="iconfont icon-arrow"></i></div>
+            </div>
+            <div class="page page3">
+                <div class="index_inner">
+                    <div class="index_box item_box">
+                        <h2><a href="#">成功案例</a></h2>
+                        <h5><span class="t">Cases</span><span class="page_icon iconfont icon-service"></span></h5>
+                        <div class="container">
+                            <div class="case_box item_bd">
+                               	
+								<div class="case_slide">
+								<!--
+                                   <yang:list titlelen='30' typeid='5' limit='12'>
+											<?php  
+											$arr[]=$list; 
+											$json="data-json='";
+											$json.='{"data":[';
+											foreach($arr as $val){
+											
+											$json.='{"url":"'.$val['url'].'","img":"'.$val['litpic'].'","type":"'.$val['catename'].'","name":"'.$val['title'].'"},';
+											
+											}
+											
+											$json.="]}'";
+										
+											
+											?>
+								   </yang:list>
+								   <div id="case_slide" <?php echo $json;?> > </div>
+								   -->
+								   
+								  
+								    <div id="case_slide" data-json='{"data":[
+                                         {"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case1.jpg","type":"APP推广服务案例","name":"暴走地下城"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case2.jpg","type":"APP推广服务案例","name":"苍穹变"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case3.jpg","type":"APP推广服务案例","name":"放开那三国2"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case4.jpg","type":"APP推广服务案例","name":"海航王"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case5.jpg","type":"APP推广服务案例","name":"君王2"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case6.jpg","type":"APP推广服务案例","name":"少年三国志"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case7.jpg","type":"APP推广服务案例","name":"神武2"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case8.jpg","type":"APP推广服务案例","name":"妖怪来了"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case9.jpg","type":"APP推广服务案例","name":"崩坏3"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case10.jpg","type":"APP推广服务案例","name":"王者荣耀"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case11.jpg","type":"APP推广服务案例","name":"天龙八部手游"}
+                                        ,{"url":"index.php?s=/List/index/cid/5.html","img":"__PUBLIC__/images/case12.jpg","type":"APP推广服务案例","name":"SUP多人赛车"}
+                                    ]}'>
+                                    </div>
+								
+
+								   
+								   
+                               
+                             </div>
+								
+								
+								
+                                <div class="arr">
+                                    <div class="case_arrow_l"><i class="iconfont icon-left"></i></div>
+                                    <div class="case_arrow_r"><i class="iconfont icon-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow"><span></span><i class="iconfont icon-arrow"></i></div>
+            </div>
+            <div class="page page4">
+                <div class="index_inner">
+                    <div class="index_box item_box">
+                        <h2><a href="kehuminglu.html">我们的客户</a></h2>
+                        <h5><span class="t">Clients</span></h5>
+                        <div class="container">
+                            <div class="custom_box item_bd">
+                                <div class="clearfix">
+                                    <div class="item"><div><span></span><img src="__PUBLIC__/images/logo1.png" alt="海信集团"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo2.png" alt="中国中化"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo3.png" alt="青岛郑建集团"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo4.png" alt="国家电网青岛公司"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo5.png" alt="青岛承建地产 青岛印象"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo6.png" alt="青岛泰凯英"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo7.png" alt="青岛宝龙地产"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo8.png" alt="青岛亨达集团"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo9.png" alt="青岛市图书馆"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo10.png"  alt="青岛市博物馆"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo10.png" alt="青岛力图数字科技网站客户"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo10.png" alt="青岛力图数字科技网站客户"></div></div><div class="item">
+                                    <div><span></span><img src="__PUBLIC__/images/logo10.png" alt="青岛力图数字科技网站客户"></div></div>
+                                    <div class="city"></div>
+                                    <div class="names"><span>我们的客户</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow"><span></span><i class="iconfont icon-arrow"></i></div>
+            </div>
+            <div class="page page5">
+                <div class="index_inner">
+                    <div class="index_box item_box">
+                        <h2><a href="newscenter.html">公司资讯</a></h2>
+                        <h5><span class="t">News Center</span><span class="page_icon iconfont icon-news"></span></h5>
+                        <div class="container">
+                            <div class="news_box item_bd">
+                                <ul>
+								
+								<yang:list titlelen='30' typeid='2' limit='3'>
+                                <li>
+                                      <a href="{$list.url}">
+                                            <p class="type"><span>{$list.catename}</span>/{$list.publishtime|date='Y-m-d',###}</p>
+                                            <h4 class="title">{$list.title}</h4>
+                                            <p>{$list.description}...</p>
+                                            <p class="more">Learn More <i class="iconfont icon-right"></i></p>
+                                        </a>                                    
+								</li>
+								</yang:list>	
+										
+
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow"><span></span><i class="iconfont icon-arrow"></i></div>
+            </div>
+            <div class="page page6">
+                <div class="index_inner">
+                    <div class="index_box item_box">
+                        <h2><a href="contact.html">联系我们</a></h2>
+                        <h5><span class="t">Contact Us</span><span class="page_icon iconfont icon-contact"></span></h5>
+                        <div class="container-fluid">
+                            <div class="contact_box item_bd">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <div class="contact">
+                                                <div>
+                                                <ul class="clearfix">
+                                                    <li><span class="icon iconfont icon-qq"></span><span class="text"><p class="tips">QQ</p><p class="num"><a href="http://wpa.qq.com/msgrd?v=3&uin=<yang:block name='qq' />&site=qq&menu=yes" target="_blank"><yang:block name='qq' /></a></p></span></li>
+                                                    <li><span class="icon iconfont icon-tel"></span><span class="text"><p class="tips">电话</p><p class="num"><a href="tel:<yang:phone />" target="_blank"><yang:phone /></a></p></span></li>
+                                                    <li><span class="icon iconfont icon-place"></span><span class="text"><p class="tips">地址</p><p><yang:address /></p></span></li>
+                                                    <li><span class="icon iconfont icon-mail"></span><span class="text"><p class="tips">E-Mail</p><p><yang:block name='email' /></p></span></li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                            <div class="solgan">
+                                                <div>
+                                                    <p>推广为品牌巩固地位！</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="map" style="text-align:center;background:none;height:627px;overflow:hidden;">
+												<yang:block name='map' />
+										</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav_index" class="nav_index">
+        <div>
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+	
+	<include file="Public:bottom" />
+	
+    <script src="__PUBLIC__/js/index.js"></script>
+			   

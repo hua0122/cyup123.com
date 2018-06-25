@@ -1,0 +1,60 @@
+<include file="Public:header" />
+<link href="__PUBLIC__/css/main.css" rel="stylesheet">
+
+<!--主体内容开始-->
+    <div class="wrapper">
+        <div class="header_hd" style="background-image:url(__PUBLIC__/images/head-gaoduan.jpg); background-repeat:no-repeat">
+            <div class="container">
+                <h3>客户案例</h3>
+                <h2>高端APP推广</h2>
+                <div id="case_tab" class="tab">
+                    <div>
+                        
+                         <yang:catlist typeid="5" type='son' flag='1'>
+						<a href="{$catlist.url}" class="active">{$catlist.name}</a>
+						</yang:catlist>
+                         
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="case_info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <p class="name"><span>{$cate.name}</span></p>
+                        <h2 class="ellipsis">{$content.title}</h2>
+                           <p><img src="{$content.litpic}" width="200"></p>
+                        <!--<a href='#' class='vlink' target='_blank'>访问网站</a>-->
+                    </div>
+                    <div class="col-md-7 col-sm-6 col-xs-12">
+                        <p class="name"><span>策划说明</span></p>
+                        <p class="info">{$content.description}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail_bd">
+            <div class="container">
+              {$content.content}
+            </div>
+        </div>
+        <div class="detail_bt">
+            <h3>想做这样的网站？</h3>
+            <p><yang:sitetitle />在为您做的，不仅仅是一次设计，而是在与您一起，缔造一个属于您的网络品牌......</p>
+            <a href="<yang:siteurl />index.php?s=/List/index/cid/14.html" class="detail_contact_btn">立即与我们联系！</a>
+        </div>
+        <div class="detail_more">
+            <a href="kehuminglu.html">
+            <div class="arrow_r"><span><i class="iconfont icon-right"></i></span></div>
+            <p>浏览全部客户案例</p>
+            </a>
+        </div>
+    </div>
+ 	<include file="Public:footer" />
+	<include file="Public:bottom" />
+	
+	
+  
+<script src="__PUBLIC__/js/main.js"></script>

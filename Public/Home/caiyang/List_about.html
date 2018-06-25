@@ -1,0 +1,81 @@
+<include file="Public:header" />
+<link href="__PUBLIC__/css/main.css" rel="stylesheet">
+
+<!--主体内容开始-->
+    <div class="wrapper">
+        <div class="about_hd">
+            <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-4 col-md-6"><h2>关于我们</h2><h4>Since 2005</h4></div>
+                  <div class="col-xs-12 col-sm-8 col-md-6">
+                      <div class="infos">
+                            {$cate.content}
+                            <a href="<yang:siteurl />/index.php?s=/List/index/cid/14.html" class="about_btn"><span>立即与我们联系</span></a>
+                        </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+		
+        <div class="container">
+	
+			 <div class="case_logo content hidden-xs" style="margin-bottom:20px">
+                <div class="case_num">
+                    <span class="case_arrow_l iconfont icon-left"></span><span class="case_arrow_r iconfont icon-right"></span>
+                </div>
+                <p class="tit"><i class="iconfont icon-about"></i>客户案例</p>
+                <div id="case_slide" class="case_slide">
+                    <div>
+					<yang:list titlelen='30' typeid='25' limit='5' orderby='publishtime asc'>
+                        <span><span><a  target="_blank"><img src="{$list.litpic}" class="logo1" alt="{$list.title}"></a><img src="{$list.litpic}" class="logo2" alt="{$list.title}"></span></span>
+                    </yang:list>
+					</div>
+					
+                    <div>
+                    <yang:list titlelen='30' typeid='25' limit='5,5' orderby='publishtime asc'>
+                        <span><span><a  target="_blank"><img src="{$list.litpic}" class="logo1" alt="{$list.title}"></a><img src="{$list.litpic}" class="logo2" alt="{$list.title}"></span></span>
+                    </yang:list>   
+					</div>
+                    <div>
+                      <yang:list titlelen='30' typeid='25' limit='10,5' orderby='publishtime asc'>
+                        <span><span><a  target="_blank"><img src="{$list.litpic}" class="logo1" alt="{$list.title}"></a><img src="{$list.litpic}" class="logo2" alt="{$list.title}"></span></span>
+                    </yang:list> 
+					</div>
+                   
+                </div>
+            </div>
+			
+			 <div class="content">
+                <h4>榜单大促销，联系一下会改变你应用的命运！</h4>
+                <div class="line"></div>
+                <div class="row mb" style="padding:20px;">
+				<p>
+                  亲，才扬科技奋发图强，再次席卷市场而来！改变应用命运的时刻就在此时，我们专做企业化营销，为一切应用发现铺平道路！<br><br>
+
+亲，为什么要选择我们？因为我们用最低的价格做最专业的事。例：有人优化排名会出现收到警告，降权重，跳出市场，剔排名，都是因为没有经过严格的测试，请给我们的一次机会，你会了解到我们的专业，我们都会有15款以上自家新游进行亲测，保障用户的一切利益，非黑卡ID。
+<br><br>
+亲，注意了，我们只为筹集老客户，你获得的价格和质量都将是最完美的，期待你的联系。
+<br><br>
+<span style="font-weight:800">业务主体：</span>iTunes付费、免费、畅销、aso、热搜、安装、激活、升级等业务主体。Android各大市场榜单、应用宝、安智、安卓、91、百度、九游等或下载量、激活量、应用包留存都可@才扬
+<br><br>
+<span style="font-weight:800">业务实力：</span>上前部手机随时更换，给你带来全新的自然量，让你不在担心效果的不达标，领导的批评等外界因素。
+</p>
+                </div>
+             
+
+            </div>
+			
+			
+			
+			
+			
+        </div>
+
+    </div>
+    
+	<include file="Public:footer" />
+	<include file="Public:bottom" />
+	
+	
+  
+<script src="__PUBLIC__/js/main.js"></script>

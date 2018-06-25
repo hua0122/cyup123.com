@@ -1,0 +1,78 @@
+<include file="Public:header" />
+<link href="__PUBLIC__/css/main.css" rel="stylesheet">
+
+<!--主体内容开始-->
+    <div class="wrapper">
+        <div class="service_box">
+            <div id="service_bg" class="bgs">
+                <div class="current"><div style="background-image:url(__PUBLIC__/images/service.jpg)"></div></div>
+                <div><div style="background-image:url(__PUBLIC__/images/service2.jpg)"></div></div>
+                <div><div style="background-image:url(__PUBLIC__/images/service3.jpg)"></div></div>
+            </div>
+            <div class="service_inner">
+                <div class="service_tab">
+                    <h2>
+					<yang:catlist typeid="1" type='son' flag='1' limit='3'>
+						<?php if($catlist['id']==15){ ?>
+					<span class="current">{$catlist.name}</span>
+					<?php } else{ ?>
+					<span >{$catlist.name}</span>
+					
+					<?php } ?>
+					
+					</yang:catlist>
+				
+					
+					</h2>
+                    <p>
+					<yang:catlist typeid="1" type='son' flag='1' limit='3'>
+					<?php if($catlist['id']==15){ ?>
+					<span class="current">{$catlist.description}</span>
+					<?php } else{ ?>
+					<span>{$catlist.description}</span>
+					<?php } ?>
+					
+					</yang:catlist>
+				
+					
+					</p>
+                    <div class="tab_main">
+                        <ul id="service_num" class="clearfix">
+						<yang:catlist typeid="1" type='son' flag='1' limit='3'>
+                            <li><div><a href="{$catlist.url}"><span>
+							<?php if($catlist['id']==15){ ?>
+							 <i class="iconfont icon-pc"></i>
+							<?php } ?>			
+                            <?php if($catlist['id']==16){ ?>
+							 <i class="iconfont icon-pm"></i>
+							<?php } ?>	
+
+							<?php if($catlist['id']==17){ ?>
+							 <i class="iconfont icon-mb"></i>
+							<?php } ?>	
+							
+							
+							<p>查看更多</p>
+							</span></a></div></li>
+						</yang:catlist>	
+							
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+	<include file="Public:footer" />
+	<include file="Public:bottom" />
+	
+	
+  
+<script src="__PUBLIC__/js/main.js"></script>
+<script>
+$(function(){
+	$('.footer').addClass('pos');
+})
+
+
+</script>

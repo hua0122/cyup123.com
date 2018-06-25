@@ -1,0 +1,58 @@
+<include file="Public:header" />
+<link href="__PUBLIC__/css/main.css" rel="stylesheet">
+
+<!--主体内容开始-->
+    <div class="wrapper">
+        <div class="header_hd" style="background-image:url(__PUBLIC__/images/zixun.jpg); background-repeat:no-repeat">
+            <div class="container">
+                <h3>信息动态</h3>
+                <h2>网络推广是技术与创意的完美融合!</h2>
+                <div id="case_tab" class="tab">
+                    <div>
+                         
+                        <yang:catlist typeid="2" type='son' flag='1'>
+						<a href="{$catlist.url}" <?php if($cid==$catlist['id']){ echo 'class="active"'; } ?> >{$catlist.name}</a>
+						</yang:catlist>
+                         
+                        <span></span>                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h4 class="text-c">{$cate.name}</h4>
+                    <div class="news_box">
+                    
+						<yang:list titlelen='30' typeid='$cid' pagesize='16'>
+                        <div class="row" style="width:50%;float:left;margin-left:0px;margin-right:0px;">
+                             <div class="col-md-6 col-xs-12 col-sm-6" style="width:100%">
+                                <a href="{$list.url}">
+                                                <p class="type"><span>{$list.catename}</span>/ {$list.publishtime|date='Y-m-d',###}</p>
+                                                <p class="title">{$list.title}</p>
+                                                <p>{$list.description}...</p>
+                                                <p class="more">Learn More <i class="iconfont icon-right"></i></p>
+                                </a>                             </div>
+								
+						</div>
+						</yang:list>
+                    
+                        
+                </div>
+                
+                <div class="page">{$page}</div>
+                
+            </div>
+        </div>
+    </div>
+  	<include file="Public:footer" />
+	<include file="Public:bottom" />
+	
+	
+  
+<script src="__PUBLIC__/js/main.js"></script>
+<script>
+$(function(){
+	$('body').addClass('bg_gary');
+})
+</script>
+
